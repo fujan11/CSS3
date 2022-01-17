@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kotak{
+            width: 200px;
+            height: 200px;
+            background-color: salmon;
+            animation: kotak 2s ease;
+            animation-name: kotak;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: 2;
+            animation-direction: alternate;
+            -o-animation-fill-mode: forwards;
+            
+        }
+    
+        @keyframes kotak {
+            0%{
+                width: 200px;
+            }
+            50%{
+                width: 200px;
+                height: 200px;
+            }
+            100%{
+                width: 500px;
+                height: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="kotak"></div>
+</body>
+</html>

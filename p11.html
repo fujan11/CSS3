@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+
+        }
+        .container{
+            margin: 5px auto;
+            width: 900px;
+            border: 5px solid black;
+        }
+        .kotak{
+            margin: 5px 0;
+            height: 90px;
+            width: 100px;
+            background-color: burlywood;
+            line-height: 90px;
+            text-align: center;
+        
+        }
+        .kotak1{transition:all 3s 0.5s ease ;}
+        .kotak2{transition:all  3s 0.5s ease-in ;}
+        .kotak3{transition:all  3s 0.5s ease-out ;}
+        .kotak4{transition:all  3s 0.5s ease-in-out ;}
+        .kotak5{transition:all  3s 0.5s linear ;}
+        .kotak6{transition:all  3s 0.5s cubic-bezier(1, 0.15, 0.05, 1.01) ;}
+        .kotak7{transition: transform 2s 500ms, background-color 1s 500ms, margin-left 2s 1s;}
+
+        .container:hover .kotak {
+            background-color: cyan;
+            transform: rotate(720deg);
+            margin-left: 800px;
+        }
+
+    </style>
+</head>
+<body>
+    
+<div class="container">
+    <div class="kotak kotak1">ease</div>
+    <div class="kotak kotak2">ease in</div>
+    <div class="kotak kotak3">ease out</div>
+    <div class="kotak kotak4">in out</div>
+    <div class="kotak kotak5">linear</div>
+    <div class="kotak kotak6">rubic</div>
+    <div class="kotak kotak7">custome</div>
+</div>
+</body>
+</html>

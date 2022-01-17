@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kotak1{
+            height: 200px;
+            width: 200px;
+            border: 5px brown solid;
+        }
+        .kotak2{
+            height: 200px;
+            width: 200px;
+            border: 5px rgb(42, 151, 165) solid;
+            position: absolute;
+            right: 0;
+            /* position: relative; */
+        }
+        .kotak3{
+            height: 200px;
+            width: 200px;
+            border: 5px rgb(24, 223, 51) solid;
+        }
+        .container{
+            height: 1000px;
+            width: 800px;
+            border: 5px black solid;
+            position: relative;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- ketika memakai absolute posisi mengacu kepada ukuran pembungkus -->
+    <div class="container">
+    <div class="kotak1"></div>
+    <div class="kotak2"></div>
+    <div class="kotak3"></div>
+</div>
+</body>
+</html>
